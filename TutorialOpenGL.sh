@@ -4,7 +4,7 @@
 FILE="/tmp/out.$$"
 
 #Utilizar o modo administrador para rodar o script
-if [[ $EUID -ne 0 ]]; then
+if [[ "$EUID" -ne "0" ]]; then
     echo "Esse script deve ser executado em modo administrador, portanto, "#sudo su" em seu terminal linux, e depois deve digitar sua senha" !>&2
     exit 1
 fi
