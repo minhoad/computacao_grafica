@@ -2,7 +2,6 @@
 #avisando o terminal que o nosso script está escrito em bash
 
 FILE="/tmp/out.$$"
-GREP="/bin/grep"
 
 #Utilizar o modo administrador para rodar o script
 if [[ $EUID -ne 0 ]]; then
